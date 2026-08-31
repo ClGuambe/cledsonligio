@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cledson Lígio Guambe — Professor de Informática & Estudante de Engenharia de Software</title>
+  <meta name="description" content="Portefólio de Cledson Lígio Guambe: professor de Informática em Xai-Xai e estudante de Engenharia de Software na Universidade Save. Projectos em PHP, MySQL, Java e JavaScript.">
+
+  <!-- Duas famílias tipográficas: uma serifada para os títulos, dar peso e identidade, e uma sans-serif para o corpo, por legibilidade -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho fixo, com o logótipo e a navegação. O menu hambúrguer só aparece em ecrãs pequenos -->
+  <header class="site-header" id="topo">
+    <div class="header-inner">
+      <a href="#topo" class="logo" aria-label="Cledson Lígio Guambe — início">
+        C<span class="logo-accent">L</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#tecnologias" class="nav-link">Tecnologias</a>
+        <a href="#projectos" class="nav-link">Projectos</a>
+        <a href="#formacao" class="nav-link">Formação</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Secção principal: quem é o Cledson, num relance -->
+    <section class="hero" id="sobre">
+      <div class="hero-inner">
+        <div class="hero-portrait">
+          <!-- Substituir por uma fotografia real (ex: assets/cledson.jpg) quando disponível -->
+          <svg viewBox="0 0 200 200" class="portrait-placeholder" role="img" aria-label="Retrato de Cledson Lígio Guambe">
+            <circle cx="100" cy="100" r="100" fill="var(--navy)"/>
+            <circle cx="100" cy="84" r="34" fill="var(--gold)"/>
+            <path d="M40 190c6-42 40-64 60-64s54 22 60 64" fill="var(--gold)"/>
+          </svg>
+        </div>
+
+        <div class="hero-text">
+          <p class="eyebrow">Xai-Xai, Moçambique</p>
+          <h1>Cledson Lígio<br>Guambe</h1>
+          <p class="hero-role">Professor de Informática e Estudante de Engenharia de Software</p>
+          <p class="hero-bio">
+            Sou professor de Informática no Colégio 20 de Julho, na cidade de Xai-Xai, e estudante de
+            Licenciatura em Informática, com especialização em Engenharia de Software, na Universidade
+            Save. Sou também fundador do Académiku, uma plataforma que liga estudantes e promove a
+            partilha de conhecimento.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projectos" class="btn btn-primary">
+              Ver Projectos
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#contacto" class="btn btn-secondary">
+              Contactar
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 4h12v8H2z" stroke="currentColor" stroke-width="1.4"/><path d="M2 4l6 5 6-5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Números que resumem a experiência, sem exagerar -->
+      <dl class="stats">
+        <div class="stat">
+          <dt>2+</dt>
+          <dd>Anos em docência</dd>
+        </div>
+        <div class="stat">
+          <dt>10+</dt>
+          <dd>Projectos concluídos</dd>
+        </div>
+        <div class="stat">
+          <dt>8</dt>
+          <dd>Tecnologias dominadas</dd>
+        </div>
+      </dl>
+    </section>
+
+    <!-- Tecnologias com que trabalho no dia-a-dia -->
+    <section class="section" id="tecnologias">
+      <h2 class="section-title">Tecnologias</h2>
+      <ul class="tech-grid">
+        <li class="tech-item"><span class="tech-icon" style="color:#E44D26">◆</span>HTML5</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#1572B6">◆</span>CSS3</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#F0DB4F">◆</span>JavaScript</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#777BB4">◆</span>PHP</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#4479A1">◆</span>MySQL</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#F05032">◆</span>Git</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#5382A1">◆</span>Java</li>
+        <li class="tech-item"><span class="tech-icon" style="color:#38BDF8">◆</span>Tailwind CSS</li>
+      </ul>
+    </section>
+
+    <!-- Projectos em destaque -->
+    <section class="section" id="projectos">
+      <h2 class="section-title">Projectos em Destaque</h2>
+
+      <div class="projects">
+        <article class="project-card">
+          <div class="project-media project-media--escola" aria-hidden="true">
+            <span class="media-label">EscolaPro</span>
+          </div>
+          <div class="project-body">
+            <h3>Sistema de Gestão Escolar</h3>
+            <p>Plataforma multi-tenant para gestão de alunos, turmas, notas, presenças e relatórios, com painéis distintos para direcção, professores, alunos e encarregados de educação.</p>
+            <ul class="project-tags">
+              <li>PHP</li><li>MySQL</li><li>Java</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link">Ver código
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.22.48-2.69-1.07-2.69-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .22.15.47.55.39A8 8 0 008 0z"/></svg>
+              </a>
+              <a href="#" class="project-link">Ver demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2L6.5 9.5M4 4H2v10h10v-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media project-media--financas" aria-hidden="true">
+            <span class="media-label">Finanças</span>
+          </div>
+          <div class="project-body">
+            <h3>App de Finanças Pessoais</h3>
+            <p>Aplicação móvel para controlo de despesas, categorias, orçamentos e metas financeiras, pensada para quem está a começar a organizar as suas contas.</p>
+            <ul class="project-tags">
+              <li>React Native</li><li>Expo</li><li>SQLite</li><li>Tailwind</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link">Ver código
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.22.48-2.69-1.07-2.69-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .22.15.47.55.39A8 8 0 008 0z"/></svg>
+              </a>
+              <a href="#" class="project-link">Ver demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2L6.5 9.5M4 4H2v10h10v-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-media project-media--academiku" aria-hidden="true">
+            <span class="media-label">Académiku</span>
+          </div>
+          <div class="project-body">
+            <h3>Académiku</h3>
+            <p>Rede social académica que liga estudantes lusófonos de África, permite partilhar conteúdos, tirar dúvidas e promove a discussão saudável entre universidades.</p>
+            <ul class="project-tags">
+              <li>PHP</li><li>MySQL</li><li>JavaScript</li><li>Tailwind</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link">Ver código
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.22.48-2.69-1.07-2.69-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .22.15.47.55.39A8 8 0 008 0z"/></svg>
+              </a>
+              <a href="#" class="project-link">Ver demo
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 2h8v8M14 2L6.5 9.5M4 4H2v10h10v-2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Percurso académico, do mais recente para o mais antigo -->
+    <section class="section" id="formacao">
+      <h2 class="section-title">Formação Académica</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <span class="timeline-period">2025 – Presente</span>
+          <h3>Licenciatura em Informática, especialização em Engenharia de Software</h3>
+          <p>Universidade Save (UniSave)</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <span class="timeline-period">2022 – 2024</span>
+          <h3>Formação de Professores e Educação de Adultos (12ª+3 anos)</h3>
+          <p>Instituto de Formação de Professores Eduardo Chivambo Mondlane</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-dot"></span>
+          <span class="timeline-period">Concluído em 2020</span>
+          <h3>Ensino Secundário</h3>
+          <p>Escola Secundária de Xai-Xai</p>
+        </li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- Rodapé com os dados de contacto -->
+  <footer class="site-footer" id="contacto">
+    <div class="footer-inner">
+      <h2>Vamos conversar?</h2>
+      <p>Estou disponível para oportunidades, projectos de ensino ou apenas para trocar ideias.</p>
+
+      <ul class="contact-list">
+        <li>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M2 4h14v10H2z" stroke="currentColor" stroke-width="1.3"/><path d="M2 4l7 6 7-6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <button type="button" class="contact-value copy-email" data-email="cledsonguambe1@gmail.com">
+            cledsonguambe1@gmail.com
+          </button>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 2.5c-1 0-1.5.6-1.5 1.5 0 6.5 5 11.5 11.5 11.5 1 0 1.5-.5 1.5-1.5v-2l-3.3-1.3-1 1.4a8.6 8.6 0 01-4.8-4.8l1.4-1L6.5 2.5H4z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          <span class="contact-value">876 752 156 · 834 839 136</span>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0a8 8 0 00-2.53 15.59c.4.07.55-.17.55-.39v-1.36c-2.22.48-2.69-1.07-2.69-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.22.83 1.22.83.71 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .22.15.47.55.39A8 8 0 008 0z"/></svg>
+          <a class="contact-value" href="https://github.com/cledsonlg" target="_blank" rel="noopener">github.com/cledsonlg</a>
+        </li>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M14.5 0h-13A1.5 1.5 0 000 1.5v13A1.5 1.5 0 001.5 16h13a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0014.5 0zM4.8 13.5H2.4V6h2.4v7.5zM3.6 4.9a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM13.5 13.5h-2.4V9.9c0-.86-.02-1.96-1.2-1.96-1.2 0-1.38.94-1.38 1.9v3.66H6.1V6h2.3v1.03h.03c.32-.6 1.1-1.24 2.27-1.24 2.43 0 2.8 1.6 2.8 3.66v4.05z"/></svg>
+          <a class="contact-value" href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener">linkedin.com/in/cledsonlg</a>
+        </li>
+      </ul>
+
+      <p class="copy-feedback" id="copyFeedback" role="status" aria-live="polite"></p>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="anoAtual"></span> Cledson Lígio Guambe. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

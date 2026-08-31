@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cledson Lígio Guambe — Professor de Informática & Estudante de Engenharia de Software</title>
-  <meta name="description" content="Portefólio de Cledson Lígio Guambe: professor de Informática em Xai-Xai e estudante de Engenharia de Software na Universidade Save. Projectos em PHP, MySQL, Java e JavaScript.">
+  <title>Cledson Guambe — Professor de Informática & Estudante de Licenciatura em Informática</title>
+  <meta name="description" content="Portefólio de Cledson Guambe: professor de Informática em Xai-Xai e estudante de Licenciatura em Informática na Universidade Save. Projectos em PHP, MySQL, Java e JavaScript.">
 
   <!-- Duas famílias tipográficas: uma serifada para os títulos, dar peso e identidade, e uma sans-serif para o corpo, por legibilidade -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
   <!-- Cabeçalho fixo, com o logótipo e a navegação. O menu hambúrguer só aparece em ecrãs pequenos -->
   <header class="site-header" id="topo">
     <div class="header-inner">
-      <a href="#topo" class="logo" aria-label="Cledson Lígio Guambe — início">
+      <a href="#topo" class="logo" aria-label="Cledson Guambe — início">
         C<span class="logo-accent">L</span>
       </a>
 
@@ -43,24 +43,28 @@
     <section class="hero" id="sobre">
       <div class="hero-inner">
         <div class="hero-portrait">
-          <!-- Substituir por uma fotografia real (ex: assets/cledson.jpg) quando disponível -->
-          <svg viewBox="0 0 200 200" class="portrait-placeholder" role="img" aria-label="Retrato de Cledson Lígio Guambe">
-            <circle cx="100" cy="100" r="100" fill="var(--navy)"/>
-            <circle cx="100" cy="84" r="34" fill="var(--gold)"/>
-            <path d="M40 190c6-42 40-64 60-64s54 22 60 64" fill="var(--gold)"/>
-          </svg>
+          <img src="assets/cledson.jpg" alt="Retrato de Cledson Guambe" width="200" height="200">
         </div>
 
         <div class="hero-text">
           <p class="eyebrow">Xai-Xai, Moçambique</p>
-          <h1>Cledson Lígio<br>Guambe</h1>
-          <p class="hero-role">Professor de Informática e Estudante de Engenharia de Software</p>
+          <h1>Cledson Guambe</h1>
+          <p class="hero-role">Professor de Informática e Estudante de Licenciatura em Informática</p>
           <p class="hero-bio">
-            Sou professor de Informática no Colégio 20 de Julho, na cidade de Xai-Xai, e estudante de
-            Licenciatura em Informática, com especialização em Engenharia de Software, na Universidade
-            Save. Sou também fundador do Académiku, uma plataforma que liga estudantes e promove a
-            partilha de conhecimento.
+            Sou jovem estudante de Licenciatura em Informática na Universidade Save, com uma paixão
+            antiga por explicar as coisas de forma simples, ganha ao longo de anos a ensinar. Concluí a
+            Formação de Professores e Educação de Adultos pelo Instituto Eduardo Chivambo Mondlane e hoje
+            lecciono Informática no Colégio 20 de Julho, em Xai-Xai. Fora da sala de aula, fundei o
+            Académiku, uma rede académica para estudantes lusófonos, e apresentei o projecto Xitsundzuxo,
+            um sistema de alerta antecipado de cheias para o Vale do Rio Limpopo, numa jornada científica.
           </p>
+
+          <ul class="strengths">
+            <li>Comunicação clara, treinada todos os dias diante de uma turma</li>
+            <li>Trabalho em equipa, em sistemas com vários perfis de utilizador</li>
+            <li>Raciocínio científico, da investigação até à apresentação pública</li>
+            <li>Vontade constante de aprender uma tecnologia nova</li>
+          </ul>
 
           <div class="hero-actions">
             <a href="#projectos" class="btn btn-primary">
@@ -74,36 +78,77 @@
           </div>
         </div>
       </div>
-
-      <!-- Números que resumem a experiência, sem exagerar -->
-      <dl class="stats">
-        <div class="stat">
-          <dt>2+</dt>
-          <dd>Anos em docência</dd>
-        </div>
-        <div class="stat">
-          <dt>10+</dt>
-          <dd>Projectos concluídos</dd>
-        </div>
-        <div class="stat">
-          <dt>8</dt>
-          <dd>Tecnologias dominadas</dd>
-        </div>
-      </dl>
     </section>
 
-    <!-- Tecnologias com que trabalho no dia-a-dia -->
+    <!-- Tecnologias com que trabalho no dia-a-dia, e o papel de cada uma no meu processo -->
     <section class="section" id="tecnologias">
       <h2 class="section-title">Tecnologias</h2>
+      <p class="section-lead">Cada ferramenta entra numa fase diferente do trabalho — da primeira linha no ecrã até ao dado guardado na base de dados.</p>
+
       <ul class="tech-grid">
-        <li class="tech-item"><span class="tech-icon" style="color:#E44D26">◆</span>HTML5</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#1572B6">◆</span>CSS3</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#F0DB4F">◆</span>JavaScript</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#777BB4">◆</span>PHP</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#4479A1">◆</span>MySQL</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#F05032">◆</span>Git</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#5382A1">◆</span>Java</li>
-        <li class="tech-item"><span class="tech-icon" style="color:#38BDF8">◆</span>Tailwind CSS</li>
+        <li class="tech-item" style="--tech-color:#E4592B">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 3h16l-1.5 15L12 20l-6.5-2L4 3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M7 7h10l-.4 4H8.4l.2 2.2 3.4.9 3.4-.9.3-3.1" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="tech-name">HTML5</span>
+          <span class="tech-desc">dá o esqueleto a cada página que construo</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#2F6FED">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 3h16l-1.5 15L12 20l-6.5-2L4 3z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 8H9l.2 2h6.4l-.5 5.5-3.1.9-3.1-.9-.2-2.1" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="tech-name">CSS3</span>
+          <span class="tech-desc">veste essa estrutura de cor, espaço e movimento</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#C9A227">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.4"/><path d="M8 15.5c0 1 .6 1.5 1.5 1.5S11 16.5 11 15.5V10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M13 15c.3.8 1 1.3 1.9 1.3 1.1 0 1.8-.6 1.8-1.4 0-2-3.5-1-3.5-3 0-.8.7-1.4 1.7-1.4.8 0 1.4.4 1.7 1" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="tech-name">JavaScript</span>
+          <span class="tech-desc">dá vida à interface — responde, valida, anima</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#6C5CE7">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 12a9 9 0 1118 0 9 9 0 01-18 0z" stroke="currentColor" stroke-width="1.4"/><path d="M8 9.5h2.3c1 0 1.5.5 1.5 1.3S11.3 12 10.3 12H8v3.5M13.5 9.5h2.3c1 0 1.5.5 1.5 1.3S16.8 12 15.8 12h-1.3" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <span class="tech-name">PHP</span>
+          <span class="tech-desc">trata da lógica no servidor e fala com a base de dados</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#2E8B9E">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="6" rx="7.5" ry="3" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 6v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3V6" stroke="currentColor" stroke-width="1.4"/><path d="M4.5 12v6c0 1.7 3.4 3 7.5 3s7.5-1.3 7.5-3v-6" stroke="currentColor" stroke-width="1.4"/></svg>
+          </span>
+          <span class="tech-name">MySQL</span>
+          <span class="tech-desc">guarda e organiza tudo o que precisa de ficar</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#E15B3F">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="7" cy="6" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="7" cy="18" r="1.8" stroke="currentColor" stroke-width="1.4"/><circle cx="17" cy="12" r="1.8" stroke="currentColor" stroke-width="1.4"/><path d="M7 7.8V16.2M8.6 12.7L15.3 12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="tech-name">Git</span>
+          <span class="tech-desc">regista cada passo do trabalho, sem medo de voltar atrás</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#B86B2E">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M6 10h10v4.5c0 2.5-2.2 4.5-5 4.5s-5-2-5-4.5V10z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M16 11.2h1.3c1.2 0 2.2.9 2.2 2s-1 2-2.2 2H16" stroke="currentColor" stroke-width="1.4"/><path d="M8.5 3.8c-.6.5-.6 1 0 1.5M12 3.5c-.6.5-.6 1 0 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </span>
+          <span class="tech-name">Java</span>
+          <span class="tech-desc">constrói sistemas pensados para durar e crescer</span>
+        </li>
+
+        <li class="tech-item" style="--tech-color:#0EA5A5">
+          <span class="tech-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 9c1-2 2.5-3 4.5-3s3 1.5 5 1.5 3-1.5 4.5-1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M4 14c1-2 2.5-3 4.5-3s3 1.5 5 1.5 3-1.5 4.5-1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><path d="M4 19c1-2 2.5-3 4.5-3s3 1.5 5 1.5 3-1.5 4.5-1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </span>
+          <span class="tech-name">Tailwind CSS</span>
+          <span class="tech-desc">acelera interfaces consistentes sem sair do HTML</span>
+        </li>
       </ul>
     </section>
 
@@ -227,7 +272,7 @@
         </li>
         <li>
           <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M14.5 0h-13A1.5 1.5 0 000 1.5v13A1.5 1.5 0 001.5 16h13a1.5 1.5 0 001.5-1.5v-13A1.5 1.5 0 0014.5 0zM4.8 13.5H2.4V6h2.4v7.5zM3.6 4.9a1.4 1.4 0 110-2.8 1.4 1.4 0 010 2.8zM13.5 13.5h-2.4V9.9c0-.86-.02-1.96-1.2-1.96-1.2 0-1.38.94-1.38 1.9v3.66H6.1V6h2.3v1.03h.03c.32-.6 1.1-1.24 2.27-1.24 2.43 0 2.8 1.6 2.8 3.66v4.05z"/></svg>
-          <a class="contact-value" href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener">linkedin.com/in/cledsonlg</a>
+          <a class="contact-value" href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener">Cledson Guambe</a>
         </li>
       </ul>
 

@@ -31,6 +31,32 @@
 
 html { scroll-behavior: smooth; }
 
+/* Barra de scroll personalizada — fina, na cor da marca, em vez do traço cinzento
+   grosso que os telemóveis costumam desenhar por defeito */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--gold-dark) var(--bg);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gold-dark);
+  border-radius: 8px;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--gold);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
@@ -139,7 +165,7 @@ img, svg { display: block; max-width: 100%; }
   grid-template-columns: 200px 1fr;
   gap: 40px;
   align-items: start;
-  padding-bottom: 48px;
+  padding-bottom: 60px;
 }
 
 .hero-portrait {
@@ -148,9 +174,14 @@ img, svg { display: block; max-width: 100%; }
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--gold);
+  flex-shrink: 0;
 }
 
-.portrait-placeholder { width: 100%; height: 100%; }
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .eyebrow {
   font-size: 14px;
@@ -177,7 +208,35 @@ img, svg { display: block; max-width: 100%; }
   color: var(--text-on-navy-muted);
   max-width: 62ch;
   font-size: 15.5px;
-  margin: 0 0 28px;
+  margin: 0 0 24px;
+}
+
+/* Pontos fortes: em vez de uma lista com bolinhas, um traço dourado a
+   marcar cada linha, para ficar discreto mas ainda assim ler-se bem */
+.strengths {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  max-width: 56ch;
+}
+
+.strengths li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-on-navy);
+  font-size: 14.5px;
+}
+
+.strengths li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 10px;
+  height: 2px;
+  background: var(--gold);
 }
 
 .hero-actions {
@@ -215,38 +274,6 @@ img, svg { display: block; max-width: 100%; }
 
 .btn-secondary:hover { border-color: #fff; }
 
-/* Barra de estatísticas, a fazer a ponte entre o hero e o resto da página */
-.stats {
-  max-width: var(--container);
-  margin: 0 auto;
-  background: var(--surface);
-  border-radius: var(--radius) var(--radius) 0 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  text-align: center;
-}
-
-.stat {
-  padding: 26px 12px;
-  border-right: 1px solid var(--border);
-}
-
-.stat:last-child { border-right: none; }
-
-.stat dt {
-  font-family: var(--font-display);
-  font-size: 28px;
-  font-weight: 600;
-  color: var(--navy);
-  margin: 0;
-}
-
-.stat dd {
-  margin: 4px 0 0;
-  font-size: 13.5px;
-  color: var(--text-muted);
-}
-
 /* ---------- Secções gerais ---------- */
 
 .section {
@@ -258,10 +285,19 @@ img, svg { display: block; max-width: 100%; }
 .section-title {
   font-size: 26px;
   font-weight: 600;
-  margin-bottom: 24px;
+  margin-bottom: 10px;
+}
+
+.section-lead {
+  color: var(--text-muted);
+  font-size: 15px;
+  max-width: 56ch;
+  margin: 0 0 28px;
 }
 
 /* ---------- Tecnologias ---------- */
+/* Cada cartão traz a sua própria cor em --tech-color, definida inline no HTML,
+   e essa variável é o que muda no ícone, no fundo e na borda ao passar o rato */
 
 .tech-grid {
   list-style: none;
@@ -269,24 +305,68 @@ img, svg { display: block; max-width: 100%; }
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
+  gap: 14px;
 }
 
 .tech-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 16px 18px;
+  position: relative;
+  padding: 20px 18px 18px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  font-weight: 500;
-  font-size: 14.5px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tech-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--tech-color);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.tech-item:hover,
+.tech-item:focus-within {
+  border-color: var(--tech-color);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px -16px var(--tech-color);
+}
+
+.tech-item:hover::before,
+.tech-item:focus-within::before {
+  opacity: 0.05;
 }
 
 .tech-icon {
+  position: relative;
+  display: flex;
+  width: 34px;
+  height: 34px;
+  color: var(--tech-color);
+  margin-bottom: 12px;
+  transition: transform 0.25s ease;
+}
+
+.tech-icon svg { width: 100%; height: 100%; }
+
+.tech-item:hover .tech-icon { transform: scale(1.12) rotate(-4deg); }
+
+.tech-name {
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+.tech-desc {
+  position: relative;
+  display: block;
   font-size: 13px;
-  line-height: 1;
+  color: var(--text-muted);
+  line-height: 1.4;
 }
 
 /* ---------- Projectos ---------- */
@@ -534,11 +614,8 @@ a.contact-value:hover,
   }
 
   .hero-bio { margin-left: auto; margin-right: auto; }
+  .strengths { margin-left: auto; margin-right: auto; text-align: left; }
   .hero-actions { justify-content: center; }
-
-  .stats { grid-template-columns: 1fr; }
-  .stat { border-right: none; border-bottom: 1px solid var(--border); }
-  .stat:last-child { border-bottom: none; }
 
   .tech-grid { grid-template-columns: repeat(2, 1fr); }
 }

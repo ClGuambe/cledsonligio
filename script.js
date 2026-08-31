@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var aberto = navToggle.getAttribute('aria-expanded') === 'true';
       navToggle.setAttribute('aria-expanded', String(!aberto));
       mainNav.classList.toggle('is-open');
+      // Trava o scroll do fundo enquanto o menu de ecrã inteiro está aberto
+      document.body.style.overflow = aberto ? '' : 'hidden';
     });
 
     // Ao escolher uma opção do menu, fecha-o de novo (só faz sentido no mobile)
@@ -19,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.addEventListener('click', function () {
         mainNav.classList.remove('is-open');
         navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
       });
     });
   }

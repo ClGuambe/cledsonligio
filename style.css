@@ -8,7 +8,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--ink);
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", HelvQetica, Arial, sans-serif;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -244,12 +244,162 @@ html[data-theme="dark"] {
 .technologies-list span:hover i { color: var(--accent); }
 
 /* Idiomas */
-.languages-list { display: flex; flex-direction: column; gap: 26px; max-width: 640px; }
-.language-heading { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 10px; }
-.language-heading h3 { font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -.02em; }
-.language-level { font-size: 12px; color: var(--muted); }
-.language-bar { height: 3px; background: var(--surface); }
-.language-bar span { display: block; height: 100%; width: var(--fill, 0%); background: var(--accent-soft); }
+```css
+/* =========================
+   IDIOMAS
+   ========================= */
+
+.languages-section {
+  padding: 140px 0;
+}
+
+.languages-list {
+  border-top: 1px solid var(--line);
+}
+
+.language-item {
+  display: grid;
+  grid-template-columns: 70px 1fr auto;
+  align-items: center;
+  gap: 30px;
+
+  padding: 28px 0;
+
+  border-bottom: 1px solid var(--line);
+
+  transition: padding 0.25s ease;
+}
+
+.language-item:hover {
+  padding-left: 12px;
+}
+
+.language-number {
+  color: var(--accent);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.language-content h3 {
+  margin-bottom: 3px;
+
+  color: var(--ink);
+
+  font-size: 1.35rem;
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.language-content p {
+  color: var(--muted);
+
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.language-level {
+  color: var(--ink);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 680px) {
+
+  .languages-section {
+    padding: 90px 0;
+  }
+
+  .languages-list {
+    width: 100%;
+  }
+
+  .language-item {
+    display: grid;
+    grid-template-columns: 35px 1fr auto;
+    align-items: center;
+    gap: 12px;
+
+    padding: 22px 0;
+  }
+
+  .language-item:hover {
+    padding-left: 0;
+  }
+
+  .language-number {
+    align-self: start;
+    padding-top: 4px;
+
+    font-size: 0.65rem;
+  }
+
+  .language-content {
+    min-width: 0;
+  }
+
+  .language-content h3 {
+    margin-bottom: 4px;
+
+    font-size: 1.15rem;
+  }
+
+  .language-content p {
+    font-size: 0.75rem;
+    line-height: 1.45;
+  }
+
+  .language-level {
+    align-self: start;
+
+    padding-top: 4px;
+
+    font-size: 0.62rem;
+    letter-spacing: 0.07em;
+
+    white-space: nowrap;
+  }
+}
+
+
+/* =========================
+   MOBILE MUITO PEQUENO
+   ========================= */
+
+@media (max-width: 380px) {
+
+  .language-item {
+    grid-template-columns: 28px 1fr;
+    gap: 10px;
+  }
+
+  .language-level {
+    grid-column: 2;
+
+    padding-top: 0;
+    margin-top: 3px;
+
+    font-size: 0.6rem;
+  }
+
+  .language-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .language-content p {
+    font-size: 0.72rem;
+  }
+}
 
 /* Contacto */
 .contact-section { width: 100%; background: var(--ink); color: var(--background); padding: clamp(100px, 15vw, 220px) var(--page-padding); }
@@ -384,3 +534,4 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .reveal-element.is-visible { opacity: 1; transform: none; }
 html.reduce-motion .reveal-element { opacity: 1; transform: none; transition: none; }
+sem alterar nada, adicione isso 100% funcional

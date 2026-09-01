@@ -5,9 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portfólio de Cledson Ligio Guambe — estudante de Informática, programador e participante em iniciativas de inovação.">
   <meta name="author" content="Cledson Ligio Guambe">
-  <meta name="theme-color" content="#151515">
+  <meta name="theme-color" content="#12151a">
   <title>Cledson Ligio Guambe — Portfólio</title>
   <link rel="icon" href="assets/images/favicon.png">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,8 +17,8 @@
 <header class="site-header" id="inicio">
   <div class="header-inner">
     <a href="#inicio" class="site-logo" aria-label="Cledson Ligio Guambe — início">
-      <span class="logo-name">Cledson</span>
-      <span class="logo-mark">Guambe</span>
+      <span class="logo-mark">CG</span>
+      <span class="logo-name">Cledson<em>Guambe</em></span>
     </a>
 
     <nav class="main-navigation" id="mainNavigation" aria-label="Navegação principal">
@@ -326,29 +328,73 @@
     </div>
 
     <div class="technologies-list">
-      <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
-      <span>PHP</span><span>MySQL</span><span>Java</span><span>Git</span>
+      <span><i class="fa-brands fa-html5"></i>HTML5</span>
+      <span><i class="fa-brands fa-css3-alt"></i>CSS3</span>
+      <span><i class="fa-brands fa-js"></i>JavaScript</span>
+      <span><i class="fa-brands fa-php"></i>PHP</span>
+      <span><i class="fa-solid fa-database"></i>MySQL</span>
+      <span><i class="fa-brands fa-java"></i>Java</span>
+      <span><i class="fa-brands fa-python"></i>Python</span>
+      <span><i class="fa-brands fa-git-alt"></i>Git</span>
+      <span><i class="fa-solid fa-file-word"></i>Pacote Office</span>
+    </div>
+  </section>
+
+  <!-- IDIOMAS -->
+  <section class="section languages-section" id="idiomas" aria-labelledby="languages-title">
+    <div class="section-header">
+      <span class="section-number">08</span>
+      <h2 id="languages-title">Idiomas</h2>
+    </div>
+
+    <div class="languages-list">
+      <article class="language-item">
+        <div class="language-heading">
+          <h3>Português</h3>
+          <span class="language-level">Nativo</span>
+        </div>
+        <div class="language-bar"><span style="--fill: 100%"></span></div>
+      </article>
+
+      <article class="language-item">
+        <div class="language-heading">
+          <h3>Changana</h3>
+          <span class="language-level">Nativo</span>
+        </div>
+        <div class="language-bar"><span style="--fill: 100%"></span></div>
+      </article>
+
+      <article class="language-item">
+        <div class="language-heading">
+          <h3>Inglês</h3>
+          <span class="language-level">Intermédio</span>
+        </div>
+        <div class="language-bar"><span style="--fill: 65%"></span></div>
+      </article>
     </div>
   </section>
 
   <!-- CONTACTO -->
   <section class="contact-section" id="contacto" aria-labelledby="contact-title">
     <div class="contact-inner">
-      <span class="section-number">08</span>
+      <span class="section-number">09</span>
       <p class="contact-label">Contacto</p>
       <h2 id="contact-title">O próximo projeto<br>começa aqui.</h2>
       <p class="contact-description">Uma boa ideia merece sair do papel. Tem uma ideia, um projeto ou uma oportunidade de colaboração?</p>
 
       <div class="contact-links">
         <a href="mailto:cledsonguambe1@gmail.com" class="contact-link">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
           <span>Email</span>
           <strong>cledsonguambe1@gmail.com</strong>
         </a>
         <a href="https://github.com/cledsonlg" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
           <span>GitHub</span>
           <strong>cledsonlg</strong>
         </a>
         <a href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           <span>LinkedIn</span>
           <strong>Cledson Guambe</strong>
         </a>
@@ -360,13 +406,20 @@
 
 <footer class="site-footer">
   <div class="footer-inner">
-    <div class="footer-name">Cledson Ligio Guambe</div>
-    <p>Informática · Inovação · Moçambique</p>
+    <div class="footer-identity">
+      <div class="footer-name">Cledson Ligio Guambe</div>
+      <p>Informática · Inovação · Moçambique</p>
+    </div>
+    <div class="footer-social" aria-label="Redes sociais">
+      <a href="mailto:cledsonguambe1@gmail.com" aria-label="Enviar email"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://github.com/cledsonlg" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
     <a href="#inicio" class="back-to-top" aria-label="Voltar ao início">↑</a>
   </div>
   <div class="footer-bottom">
     <p>&copy; <span id="currentYear"></span> Cledson Ligio Guambe</p>
-    <p>Desenvolvido por Cledson</p>
+    <p>Todos os direitos reservados</p>
   </div>
 </footer>
 

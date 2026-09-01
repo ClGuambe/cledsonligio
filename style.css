@@ -243,101 +243,14 @@ html[data-theme="dark"] {
 .technologies-list span:hover { border-color: var(--accent); color: var(--accent); background: var(--surface); }
 .technologies-list span:hover i { color: var(--accent); }
 
-```css
-/* =========================
-   IDIOMAS
-   ========================= */
+/* Idiomas */
+.languages-list { display: flex; flex-direction: column; gap: 26px; max-width: 640px; }
+.language-heading { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 10px; }
+.language-heading h3 { font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -.02em; }
+.language-level { font-size: 12px; color: var(--muted); }
+.language-bar { height: 3px; background: var(--surface); }
+.language-bar span { display: block; height: 100%; width: var(--fill, 0%); background: var(--accent-soft); }
 
-.languages-section {
-  padding: 140px 0;
-}
-
-.languages-list {
-  border-top: 1px solid var(--line);
-}
-
-.language-item {
-  display: grid;
-  grid-template-columns: 70px 1fr auto;
-  align-items: center;
-  gap: 30px;
-
-  padding: 28px 0;
-
-  border-bottom: 1px solid var(--line);
-
-  transition: padding 0.25s ease;
-}
-
-.language-item:hover {
-  padding-left: 12px;
-}
-
-.language-number {
-  color: var(--accent);
-
-  font-size: 0.7rem;
-  font-weight: 700;
-}
-
-.language-content h3 {
-  margin-bottom: 3px;
-
-  color: var(--ink);
-
-  font-size: 1.35rem;
-  line-height: 1.1;
-  letter-spacing: -0.035em;
-}
-
-.language-content p {
-  color: var(--muted);
-
-  font-size: 0.82rem;
-}
-
-.language-level {
-  color: var(--ink);
-
-  font-size: 0.7rem;
-  font-weight: 700;
-
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-
-
-/* =========================
-   IDIOMAS — MOBILE
-   ========================= */
-
-@media (max-width: 680px) {
-
-  .languages-section {
-    padding: 90px 0;
-  }
-
-  .language-item {
-    grid-template-columns: 40px 1fr;
-    gap: 15px;
-
-    padding: 23px 0;
-  }
-
-  .language-level {
-    grid-column: 2;
-
-    margin-top: -7px;
-  }
-
-  .language-content h3 {
-    font-size: 1.25rem;
-  }
-
-  .language-content p {
-    font-size: 0.78rem;
-  }
-}
 /* Contacto */
 .contact-section { width: 100%; background: var(--ink); color: var(--background); padding: clamp(100px, 15vw, 220px) var(--page-padding); }
 .contact-inner { width: min(var(--max-width), 100%); margin: auto; }

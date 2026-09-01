@@ -534,4 +534,4 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 }
 .reveal-element.is-visible { opacity: 1; transform: none; }
 html.reduce-motion .reveal-element { opacity: 1; transform: none; transition: none; }
-sem alterar nada, adicione isso 100% funcional
+

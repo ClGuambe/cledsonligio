@@ -1,1455 +1,375 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-MZ">
-
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Portfólio de Cledson Ligio Guambe — estudante de Informática, programador e participante em iniciativas de inovação.">
-
-    <meta name="author"
-          content="Cledson Ligio Guambe">
-
-    <meta name="theme-color"
-          content="#151515">
-
-    <title>Cledson Ligio Guambe — Portfólio</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Cledson Ligio Guambe — estudante de Informática, programador e participante em iniciativas de inovação.">
+  <meta name="author" content="Cledson Ligio Guambe">
+  <meta name="theme-color" content="#151515">
+  <title>Cledson Ligio Guambe — Portfólio</title>
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
 
-
-<!-- =====================================================
-     HEADER
-====================================================== -->
-
 <header class="site-header" id="inicio">
+  <div class="header-inner">
+    <a href="#inicio" class="site-logo" aria-label="Cledson Ligio Guambe — início">
+      <span class="logo-name">Cledson</span>
+      <span class="logo-mark">LG</span>
+    </a>
 
-    <div class="header-inner">
+    <nav class="main-navigation" id="mainNavigation" aria-label="Navegação principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#percurso">Percurso</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#reconhecimentos">Reconhecimentos</a>
+      <a href="#formacao">Formação</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
 
-
-        <a href="#inicio"
-           class="site-logo"
-           aria-label="Cledson Ligio Guambe — início">
-
-            <span class="logo-name">
-                Cledson
-            </span>
-
-            <span class="logo-mark">
-                LG
-            </span>
-
-        </a>
-
-
-
-        <nav class="main-navigation"
-             id="mainNavigation"
-             aria-label="Navegação principal">
-
-            <a href="#sobre">
-                Sobre
-            </a>
-
-            <a href="#percurso">
-                Percurso
-            </a>
-
-            <a href="#projetos">
-                Projetos
-            </a>
-
-            <a href="#reconhecimentos">
-                Reconhecimentos
-            </a>
-
-            <a href="#formacao">
-                Formação
-            </a>
-
-            <a href="#contacto">
-                Contacto
-            </a>
-
-        </nav>
-
-
-
-        <button
-            type="button"
-            class="menu-toggle"
-            id="menuToggle"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-            aria-controls="mainNavigation">
-
-            <span></span>
-            <span></span>
-            <span></span>
-
-        </button>
-
-
+    <div class="header-actions">
+      <button type="button" class="theme-toggle" id="themeToggle" aria-label="Ativar modo escuro">
+        <span aria-hidden="true">☾</span>
+      </button>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mainNavigation">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-
+  </div>
 </header>
-
-
 
 <main>
 
-
-<!-- =====================================================
-     HERO
-====================================================== -->
-
-<section class="hero"
-         aria-labelledby="hero-title">
-
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
     <div class="hero-inner">
-
-
-        <div class="hero-intro">
-
-            <p class="eyebrow">
-                Portfólio pessoal · Moçambique · 2026
-            </p>
-
-
-            <h1 id="hero-title">
-
-                Cledson
-
-                <br>
-
-                <span>Guambe</span>
-
-            </h1>
-
-
-            <p class="hero-role">
-
-                Estudante de Informática
-                <span aria-hidden="true">·</span>
-                Programador
-                <span aria-hidden="true">·</span>
-                Criador
-
-            </p>
-
-
-            <div class="hero-location">
-
-                <span>
-                    Moçambique
-                </span>
-
-                <span aria-hidden="true">
-                    /
-                </span>
-
-                <span>
-                    Informática &amp; Inovação
-                </span>
-
-            </div>
-
+      <div class="hero-intro">
+        <p class="eyebrow">Portfólio pessoal · Moçambique · 2026</p>
+        <h1 id="hero-title">Cledson<br><span>Guambe</span></h1>
+        <p class="hero-role">Estudante de Informática <span aria-hidden="true">·</span> Programador <span aria-hidden="true">·</span> Criador</p>
+        <div class="hero-location">
+          <span>Moçambique</span>
+          <span aria-hidden="true">/</span>
+          <span>Informática &amp; Inovação</span>
         </div>
+      </div>
 
+      <div class="hero-portrait">
+        <img src="assets/images/cledson.jpg" alt="Cledson Ligio Guambe" width="430" height="538">
+      </div>
 
-
-        <div class="hero-portrait">
-
-            <img
-                src="assets/images/cledson.jpg"
-                alt="Cledson Ligio Guambe">
-
-        </div>
-
-
-
-        <div class="hero-bottom">
-
-
-            <p class="hero-description">
-
-                Desenvolvo sistemas e exploro ideias que
-                procuram transformar problemas reais em
-                soluções concretas.
-
-            </p>
-
-
-
-            <a href="#sobre"
-               class="scroll-link">
-
-                Conhecer percurso
-
-                <span aria-hidden="true">
-                    ↓
-                </span>
-
-            </a>
-
-
-        </div>
-
-
+      <div class="hero-bottom">
+        <p class="hero-description">Desenvolvo sistemas e exploro ideias que procuram transformar problemas reais em soluções concretas.</p>
+        <a href="#sobre" class="scroll-link">Conhecer percurso <span aria-hidden="true">↓</span></a>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     SOBRE
-====================================================== -->
-
-<section class="section about-section"
-         id="sobre"
-         aria-labelledby="sobre-title">
-
-
+  <!-- SOBRE -->
+  <section class="section about-section" id="sobre" aria-labelledby="sobre-title">
     <div class="section-header">
-
-        <span class="section-number">
-            01
-        </span>
-
-        <h2 id="sobre-title">
-            Sobre mim
-        </h2>
-
+      <span class="section-number">01</span>
+      <h2 id="sobre-title">Sobre mim</h2>
     </div>
-
-
 
     <div class="about-grid">
-
-
-        <div class="about-statement">
-
-            <p class="large-text">
-
-                Tecnologia é a ferramenta.
-                Resolver problemas é o objetivo.
-
-            </p>
-
-        </div>
-
-
-
-        <div class="about-details">
-
-            <p>
-
-                Sou estudante de Informática e
-                desenvolvedor interessado em transformar
-                ideias em sistemas funcionais.
-
-            </p>
-
-
-            <p>
-
-                O meu percurso combina programação,
-                desenvolvimento de sistemas, aprendizagem
-                contínua e participação em iniciativas
-                de criatividade e inovação.
-
-            </p>
-
-
-            <p>
-
-                Procuro compreender primeiro o problema,
-                estruturar uma solução e só depois
-                transformá-la em código.
-
-            </p>
-
-        </div>
-
-
+      <div class="about-statement">
+        <p class="large-text">Tecnologia é a ferramenta. Resolver problemas é o objetivo.</p>
+      </div>
+      <div class="about-details">
+        <p>Sou estudante de Informática e desenvolvedor interessado em transformar ideias em sistemas funcionais.</p>
+        <p>O meu percurso combina programação, desenvolvimento de sistemas, aprendizagem contínua e participação em iniciativas de criatividade e inovação.</p>
+        <p>Procuro compreender primeiro o problema, estruturar uma solução e só depois transformá-la em código.</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     PERCURSO
-====================================================== -->
-
-<section class="section journey-section"
-         id="percurso"
-         aria-labelledby="percurso-title">
-
-
+  <!-- PERCURSO -->
+  <section class="section journey-section" id="percurso" aria-labelledby="percurso-title">
     <div class="section-header">
-
-        <span class="section-number">
-            02
-        </span>
-
-        <h2 id="percurso-title">
-            Percurso
-        </h2>
-
+      <span class="section-number">02</span>
+      <h2 id="percurso-title">Percurso</h2>
     </div>
-
-
 
     <div class="journey-intro">
-
-        <p>
-
-            Um percurso construído entre formação,
-            desenvolvimento tecnológico e experiências
-            de inovação.
-
-        </p>
-
+      <p>Um percurso construído entre formação, desenvolvimento tecnológico e experiências de inovação.</p>
     </div>
-
-
 
     <div class="journey-list">
-
-
-        <article class="journey-item">
-
-            <div class="journey-year">
-                2020
-            </div>
-
-
-            <div class="journey-content">
-
-                <p class="journey-category">
-                    Formação
-                </p>
-
-                <h3>
-                    Ensino Secundário
-                </h3>
-
-                <p>
-                    Conclusão do ensino secundário na
-                    Escola Secundária de Xai-Xai.
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="journey-item">
-
-            <div class="journey-year">
-                2022 — 2024
-            </div>
-
-
-            <div class="journey-content">
-
-                <p class="journey-category">
-                    Formação
-                </p>
-
-                <h3>
-                    Formação de Professores
-                </h3>
-
-                <p>
-
-                    Formação no Instituto de Formação de
-                    Professores Eduardo Chivambo Mondlane,
-                    desenvolvendo também competências de
-                    comunicação e trabalho com pessoas.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="journey-item">
-
-            <div class="journey-year">
-                2024
-            </div>
-
-
-            <div class="journey-content">
-
-                <p class="journey-category">
-                    Inovação
-                </p>
-
-                <h3>
-                    1.º lugar — Prémio Jovem Criativo
-                </h3>
-
-                <p>
-
-                    Primeiro lugar no Prémio Jovem Criativo
-                    ao nível do Distrito de Chongoene,
-                    com uma solução orientada para a
-                    prática de agricultura.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="journey-item">
-
-            <div class="journey-year">
-                2025
-            </div>
-
-
-            <div class="journey-content">
-
-                <p class="journey-category">
-                    Participação provincial
-                </p>
-
-                <h3>
-                    Prémio Jovem Criativo
-                </h3>
-
-                <p>
-
-                    Participação a nível provincial no
-                    Prémio Jovem Criativo 2025, dando
-                    continuidade à experiência de inovação.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="journey-item">
-
-            <div class="journey-year">
-                2025 — presente
-            </div>
-
-
-            <div class="journey-content">
-
-                <p class="journey-category">
-                    Ensino superior
-                </p>
-
-                <h3>
-                    Licenciatura em Informática
-                </h3>
-
-                <p>
-
-                    Continuação da formação académica na
-                    área de Informática, aprofundando
-                    conhecimentos de programação,
-                    sistemas e tecnologias digitais.
-
-                </p>
-
-            </div>
-
-        </article>
-
-
+      <article class="journey-item">
+        <div class="journey-year">2020</div>
+        <div class="journey-content">
+          <p class="journey-category">Formação</p>
+          <h3>Ensino Secundário</h3>
+          <p>Conclusão do ensino secundário na Escola Secundária de Xai-Xai.</p>
+        </div>
+      </article>
+
+      <article class="journey-item">
+        <div class="journey-year">2022 — 2024</div>
+        <div class="journey-content">
+          <p class="journey-category">Formação</p>
+          <h3>Formação de Professores</h3>
+          <p>Formação no Instituto de Formação de Professores Eduardo Chivambo Mondlane, desenvolvendo também competências de comunicação e trabalho com pessoas.</p>
+        </div>
+      </article>
+
+      <article class="journey-item">
+        <div class="journey-year">2024</div>
+        <div class="journey-content">
+          <p class="journey-category">Inovação</p>
+          <h3>1.º lugar — Prémio Jovem Criativo</h3>
+          <p>Primeiro lugar no Prémio Jovem Criativo ao nível do Distrito de Chongoene, com uma solução orientada para a prática de agricultura.</p>
+        </div>
+      </article>
+
+      <article class="journey-item">
+        <div class="journey-year">2025</div>
+        <div class="journey-content">
+          <p class="journey-category">Participação provincial</p>
+          <h3>Prémio Jovem Criativo</h3>
+          <p>Participação a nível provincial no Prémio Jovem Criativo 2025, dando continuidade à experiência de inovação.</p>
+        </div>
+      </article>
+
+      <article class="journey-item">
+        <div class="journey-year">2025 — presente</div>
+        <div class="journey-content">
+          <p class="journey-category">Ensino superior</p>
+          <h3>Licenciatura em Informática</h3>
+          <p>Continuação da formação académica na área de Informática, aprofundando conhecimentos de programação, sistemas e tecnologias digitais.</p>
+        </div>
+      </article>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     RECONHECIMENTO
-====================================================== -->
-
-<section class="section recognition-section"
-         id="reconhecimentos"
-         aria-labelledby="recognition-title">
-
-
+  <!-- RECONHECIMENTO -->
+  <section class="section recognition-section" id="reconhecimentos" aria-labelledby="recognition-title">
     <div class="section-header">
-
-        <span class="section-number">
-            03
-        </span>
-
-        <h2 id="recognition-title">
-            Reconhecimento
-        </h2>
-
+      <span class="section-number">03</span>
+      <h2 id="recognition-title">Reconhecimento</h2>
     </div>
-
-
 
     <div class="recognition-feature">
-
-
-        <div class="recognition-year">
-            2024
+      <div class="recognition-year">2024</div>
+      <div class="recognition-main">
+        <p class="recognition-label">Prémio Jovem Criativo</p>
+        <h3>1.º</h3>
+        <p class="recognition-place">lugar · Distrito de Chongoene</p>
+        <div class="recognition-description">
+          <p>O reconhecimento surgiu a partir de uma solução desenvolvida para a prática de agricultura.</p>
+          <p>A proposta consistiu num protótipo multicultivador e irrigador, pensado para reunir diferentes funções numa única solução.</p>
         </div>
-
-
-
-        <div class="recognition-main">
-
-
-            <p class="recognition-label">
-                Prémio Jovem Criativo
-            </p>
-
-
-            <h3>
-                1.º
-            </h3>
-
-
-            <p class="recognition-place">
-                lugar · Distrito de Chongoene
-            </p>
-
-
-
-            <div class="recognition-description">
-
-                <p>
-
-                    O reconhecimento surgiu a partir de uma
-                    solução desenvolvida para a prática de
-                    agricultura.
-
-                </p>
-
-
-                <p>
-
-                    A proposta consistiu num protótipo
-                    multicultivador e irrigador, pensado
-                    para reunir diferentes funções numa
-                    única solução.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-
+      </div>
     </div>
-
-
 
     <div class="recognition-secondary">
-
-
-        <div class="recognition-secondary-year">
-            2025
-        </div>
-
-
-        <div>
-
-            <p class="recognition-label">
-                Continuidade
-            </p>
-
-
-            <h3>
-                Participação provincial
-            </h3>
-
-
-            <p>
-
-                Participação a nível provincial no
-                Prémio Jovem Criativo 2025.
-
-            </p>
-
-        </div>
-
-
+      <div class="recognition-secondary-year">2025</div>
+      <div>
+        <p class="recognition-label">Continuidade</p>
+        <h3>Participação provincial</h3>
+        <p>Participação a nível provincial no Prémio Jovem Criativo 2025.</p>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     PROJETOS
-====================================================== -->
-
-<section class="section projects-section"
-         id="projetos"
-         aria-labelledby="projects-title">
-
-
+  <!-- PROJETOS -->
+  <section class="section projects-section" id="projetos" aria-labelledby="projects-title">
     <div class="section-header">
-
-        <span class="section-number">
-            04
-        </span>
-
-        <h2 id="projects-title">
-            Projetos
-        </h2>
-
+      <span class="section-number">04</span>
+      <h2 id="projects-title">Projetos</h2>
     </div>
-
-
 
     <div class="projects-intro">
-
-        <p>
-
-            Sistemas e soluções desenvolvidos durante
-            o percurso académico e pessoal.
-
-        </p>
-
+      <p>Sistemas e soluções desenvolvidos durante o percurso académico e pessoal.</p>
     </div>
-
-
 
     <div class="projects-list">
-
-
-        <!-- PROJETO ACADÉMIKU -->
-
-        <article class="project project-featured"
-                 data-project="01">
-
-
-            <div class="project-index">
-                01
-            </div>
-
-
-
-            <div class="project-content">
-
-
-                <p class="project-type">
-                    Plataforma web
-                </p>
-
-
-                <h3>
-                    Académiku
-                </h3>
-
-
-                <p class="project-description">
-
-                    Plataforma académica desenvolvida para
-                    aproximar estudantes, facilitar a
-                    partilha de conteúdos e criar espaços
-                    de interação entre comunidades
-                    universitárias.
-
-                </p>
-
-
-                <ul class="project-technologies"
-                    aria-label="Tecnologias">
-
-                    <li>
-                        PHP
-                    </li>
-
-                    <li>
-                        MySQL
-                    </li>
-
-                    <li>
-                        JavaScript
-                    </li>
-
-                </ul>
-
-
-                <a href="#"
-                   class="project-action"
-                   aria-label="Ver projeto Académiku">
-
-                    Explorar projeto
-
-                    <span aria-hidden="true">
-                        ↗
-                    </span>
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="project-visual">
-
-                <div class="project-placeholder">
-
-                    <span>
-                        Académiku
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- SISTEMA DE GESTÃO DE LOJA -->
-
-        <article class="project"
-                 data-project="02">
-
-
-            <div class="project-index">
-                02
-            </div>
-
-
-
-            <div class="project-content">
-
-
-                <p class="project-type">
-                    Sistema web
-                </p>
-
-
-                <h3>
-                    Gestão de Loja
-                </h3>
-
-
-                <p class="project-description">
-
-                    Sistema destinado à gestão de vendas,
-                    stock, caixa e relatórios, centralizando
-                    diferentes operações comerciais num
-                    único ambiente.
-
-                </p>
-
-
-                <ul class="project-technologies"
-                    aria-label="Tecnologias">
-
-                    <li>
-                        PHP
-                    </li>
-
-                    <li>
-                        MySQL
-                    </li>
-
-                    <li>
-                        JavaScript
-                    </li>
-
-                </ul>
-
-
-                <a href="#"
-                   class="project-action"
-                   aria-label="Ver Sistema de Gestão de Loja">
-
-                    Explorar projeto
-
-                    <span aria-hidden="true">
-                        ↗
-                    </span>
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="project-visual">
-
-                <div class="project-placeholder">
-
-                    <span>
-                        Gestão de Loja
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- SISTEMA DE GESTÃO ESCOLAR -->
-
-        <article class="project"
-                 data-project="03">
-
-
-            <div class="project-index">
-                03
-            </div>
-
-
-
-            <div class="project-content">
-
-
-                <p class="project-type">
-                    Sistema web
-                </p>
-
-
-                <h3>
-                    Gestão Escolar
-                </h3>
-
-
-                <p class="project-description">
-
-                    Sistema criado para apoiar processos
-                    académicos e administrativos de uma
-                    instituição de ensino.
-
-                </p>
-
-
-                <ul class="project-technologies"
-                    aria-label="Tecnologias">
-
-                    <li>
-                        PHP
-                    </li>
-
-                    <li>
-                        MySQL
-                    </li>
-
-                    <li>
-                        JavaScript
-                    </li>
-
-                </ul>
-
-
-                <a href="#"
-                   class="project-action"
-                   aria-label="Ver Sistema de Gestão Escolar">
-
-                    Explorar projeto
-
-                    <span aria-hidden="true">
-                        ↗
-                    </span>
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="project-visual">
-
-                <div class="project-placeholder">
-
-                    <span>
-                        Gestão Escolar
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </article>
-
-
-
-        <!-- PROTÓTIPO AGRÍCOLA -->
-
-        <article class="project project-innovation"
-                 data-project="04">
-
-
-            <div class="project-index">
-                04
-            </div>
-
-
-
-            <div class="project-content">
-
-
-                <p class="project-type">
-                    Inovação · Agricultura
-                </p>
-
-
-                <h3>
-                    Multicultivador
-                </h3>
-
-
-                <p class="project-description">
-
-                    Protótipo multicultivador e irrigador
-                    desenvolvido como uma solução para a
-                    prática de agricultura e apresentado no
-                    âmbito do Prémio Jovem Criativo.
-
-                </p>
-
-
-
-                <div class="project-achievement">
-
-                    <span>
-                        1.º lugar
-                    </span>
-
-                    <small>
-                        Distrito de Chongoene · 2024
-                    </small>
-
-                </div>
-
-
-
-                <a href="#"
-                   class="project-action"
-                   aria-label="Ver detalhes do protótipo multicultivador">
-
-                    Explorar projeto
-
-                    <span aria-hidden="true">
-                        ↗
-                    </span>
-
-                </a>
-
-
-            </div>
-
-
-
-            <div class="project-visual">
-
-                <div class="project-placeholder">
-
-                    <span>
-                        Solução agrícola
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </article>
-
-
+      <article class="project project-featured" data-project="01">
+        <div class="project-index">01</div>
+        <div class="project-content">
+          <p class="project-type">Plataforma web</p>
+          <h3>Académiku</h3>
+          <p class="project-description">Plataforma académica desenvolvida para aproximar estudantes, facilitar a partilha de conteúdos e criar espaços de interação entre comunidades universitárias.</p>
+          <ul class="project-technologies" aria-label="Tecnologias">
+            <li>PHP</li><li>MySQL</li><li>JavaScript</li>
+          </ul>
+          <a href="#" class="project-action" aria-label="Ver projeto Académiku">Explorar projeto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="project-visual">
+          <img src="assets/images/projects/academiku.jpg" alt="Interface da plataforma Académiku" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project" data-project="02">
+        <div class="project-index">02</div>
+        <div class="project-content">
+          <p class="project-type">Sistema web</p>
+          <h3>Gestão de Loja</h3>
+          <p class="project-description">Sistema destinado à gestão de vendas, stock, caixa e relatórios, centralizando diferentes operações comerciais num único ambiente.</p>
+          <ul class="project-technologies" aria-label="Tecnologias">
+            <li>PHP</li><li>MySQL</li><li>JavaScript</li>
+          </ul>
+          <a href="#" class="project-action" aria-label="Ver Sistema de Gestão de Loja">Explorar projeto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="project-visual">
+          <img src="assets/images/projects/gestao-loja.jpg" alt="Interface do sistema de Gestão de Loja" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project" data-project="03">
+        <div class="project-index">03</div>
+        <div class="project-content">
+          <p class="project-type">Sistema web</p>
+          <h3>Gestão Escolar</h3>
+          <p class="project-description">Sistema criado para apoiar processos académicos e administrativos de uma instituição de ensino.</p>
+          <ul class="project-technologies" aria-label="Tecnologias">
+            <li>PHP</li><li>MySQL</li><li>JavaScript</li>
+          </ul>
+          <a href="#" class="project-action" aria-label="Ver Sistema de Gestão Escolar">Explorar projeto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="project-visual">
+          <img src="assets/images/projects/gestao-escolar.jpg" alt="Interface do sistema de Gestão Escolar" loading="lazy">
+        </div>
+      </article>
+
+      <article class="project project-innovation" data-project="04">
+        <div class="project-index">04</div>
+        <div class="project-content">
+          <p class="project-type">Inovação · Agricultura</p>
+          <h3>Multicultivador</h3>
+          <p class="project-description">Protótipo multicultivador e irrigador desenvolvido como uma solução para a prática de agricultura e apresentado no âmbito do Prémio Jovem Criativo.</p>
+          <div class="project-achievement">
+            <span>1.º lugar</span>
+            <small>Distrito de Chongoene · 2024</small>
+          </div>
+          <a href="#" class="project-action" aria-label="Ver detalhes do protótipo multicultivador">Explorar projeto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="project-visual">
+          <img src="assets/images/projects/multicultivador.jpg" alt="Protótipo multicultivador e irrigador" loading="lazy">
+        </div>
+      </article>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     FORMAÇÃO
-====================================================== -->
-
-<section class="section education-section"
-         id="formacao"
-         aria-labelledby="education-title">
-
-
+  <!-- FORMAÇÃO -->
+  <section class="section education-section" id="formacao" aria-labelledby="education-title">
     <div class="section-header">
-
-        <span class="section-number">
-            05
-        </span>
-
-        <h2 id="education-title">
-            Formação
-        </h2>
-
+      <span class="section-number">05</span>
+      <h2 id="education-title">Formação</h2>
     </div>
-
-
 
     <div class="education-list">
+      <article class="education-item">
+        <span class="education-year">2025 — presente</span>
+        <div class="education-content">
+          <h3>Licenciatura em Informática</h3>
+          <p>Universidade Save — UniSave</p>
+        </div>
+      </article>
 
+      <article class="education-item">
+        <span class="education-year">2022 — 2024</span>
+        <div class="education-content">
+          <h3>Formação de Professores e Educação de Adultos</h3>
+          <p>Instituto de Formação de Professores Eduardo Chivambo Mondlane</p>
+        </div>
+      </article>
 
-        <article class="education-item">
-
-            <span class="education-year">
-                2025 — presente
-            </span>
-
-
-            <div class="education-content">
-
-                <h3>
-                    Licenciatura em Informática
-                </h3>
-
-                <p>
-                    Universidade Save — UniSave
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="education-item">
-
-            <span class="education-year">
-                2022 — 2024
-            </span>
-
-
-            <div class="education-content">
-
-                <h3>
-                    Formação de Professores
-                    e Educação de Adultos
-                </h3>
-
-                <p>
-                    Instituto de Formação de
-                    Professores Eduardo Chivambo Mondlane
-                </p>
-
-            </div>
-
-        </article>
-
-
-
-        <article class="education-item">
-
-            <span class="education-year">
-                2020
-            </span>
-
-
-            <div class="education-content">
-
-                <h3>
-                    Ensino Secundário
-                </h3>
-
-                <p>
-                    Escola Secundária de Xai-Xai
-                </p>
-
-            </div>
-
-        </article>
-
-
+      <article class="education-item">
+        <span class="education-year">2020</span>
+        <div class="education-content">
+          <h3>Ensino Secundário</h3>
+          <p>Escola Secundária de Xai-Xai</p>
+        </div>
+      </article>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     COMO TRABALHO
-====================================================== -->
-
-<section class="section capabilities-section"
-         id="processo"
-         aria-labelledby="process-title">
-
-
+  <!-- COMO PENSO -->
+  <section class="section capabilities-section" id="processo" aria-labelledby="process-title">
     <div class="section-header">
-
-        <span class="section-number">
-            06
-        </span>
-
-        <h2 id="process-title">
-            Como penso
-        </h2>
-
+      <span class="section-number">06</span>
+      <h2 id="process-title">Como penso</h2>
     </div>
-
-
 
     <div class="capabilities-grid">
-
-
-        <article class="capability">
-
-            <span class="capability-number">
-                01
-            </span>
-
-
-            <h3>
-                Observar
-            </h3>
-
-
-            <p>
-
-                Procurar compreender o problema antes
-                de pensar na tecnologia.
-
-            </p>
-
-        </article>
-
-
-
-        <article class="capability">
-
-            <span class="capability-number">
-                02
-            </span>
-
-
-            <h3>
-                Estruturar
-            </h3>
-
-
-            <p>
-
-                Organizar ideias, processos, dados e
-                necessidades.
-
-            </p>
-
-        </article>
-
-
-
-        <article class="capability">
-
-            <span class="capability-number">
-                03
-            </span>
-
-
-            <h3>
-                Construir
-            </h3>
-
-
-            <p>
-
-                Transformar a solução pensada em
-                uma aplicação ou protótipo funcional.
-
-            </p>
-
-        </article>
-
-
-
-        <article class="capability">
-
-            <span class="capability-number">
-                04
-            </span>
-
-
-            <h3>
-                Melhorar
-            </h3>
-
-
-            <p>
-
-                Testar, identificar problemas e
-                aperfeiçoar o resultado.
-
-            </p>
-
-        </article>
-
-
+      <article class="capability">
+        <span class="capability-number">01</span>
+        <h3>Observar</h3>
+        <p>Procurar compreender o problema antes de pensar na tecnologia.</p>
+      </article>
+      <article class="capability">
+        <span class="capability-number">02</span>
+        <h3>Estruturar</h3>
+        <p>Organizar ideias, processos, dados e necessidades.</p>
+      </article>
+      <article class="capability">
+        <span class="capability-number">03</span>
+        <h3>Construir</h3>
+        <p>Transformar a solução pensada em uma aplicação ou protótipo funcional.</p>
+      </article>
+      <article class="capability">
+        <span class="capability-number">04</span>
+        <h3>Melhorar</h3>
+        <p>Testar, identificar problemas e aperfeiçoar o resultado.</p>
+      </article>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     FERRAMENTAS
-====================================================== -->
-
-<section class="section technologies-section"
-         id="ferramentas"
-         aria-labelledby="technologies-title">
-
-
+  <!-- FERRAMENTAS -->
+  <section class="section technologies-section" id="ferramentas" aria-labelledby="technologies-title">
     <div class="section-header">
-
-        <span class="section-number">
-            07
-        </span>
-
-        <h2 id="technologies-title">
-            Ferramentas
-        </h2>
-
+      <span class="section-number">07</span>
+      <h2 id="technologies-title">Ferramentas</h2>
     </div>
-
-
 
     <div class="technologies-list">
-
-        <span>
-            HTML5
-        </span>
-
-        <span>
-            CSS3
-        </span>
-
-        <span>
-            JavaScript
-        </span>
-
-        <span>
-            PHP
-        </span>
-
-        <span>
-            MySQL
-        </span>
-
-        <span>
-            Java
-        </span>
-
-        <span>
-            Git
-        </span>
-
+      <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+      <span>PHP</span><span>MySQL</span><span>Java</span><span>Git</span>
     </div>
+  </section>
 
-</section>
-
-
-
-<!-- =====================================================
-     CONTACTO
-====================================================== -->
-
-<section class="contact-section"
-         id="contacto"
-         aria-labelledby="contact-title">
-
-
+  <!-- CONTACTO -->
+  <section class="contact-section" id="contacto" aria-labelledby="contact-title">
     <div class="contact-inner">
+      <span class="section-number">08</span>
+      <p class="contact-label">Contacto</p>
+      <h2 id="contact-title">O próximo projeto<br>começa aqui.</h2>
+      <p class="contact-description">Uma boa ideia merece sair do papel. Tem uma ideia, um projeto ou uma oportunidade de colaboração?</p>
 
-
-        <span class="section-number">
-            08
-        </span>
-
-
-        <p class="contact-label">
-            Contacto
-        </p>
-
-
-        <h2 id="contact-title">
-
-            Do problema
-            <br>
-            à solução.
-
-        </h2>
-
-
-        <p class="contact-description">
-
-            Tem uma ideia, um projeto ou uma oportunidade
-            de colaboração?
-
-        </p>
-
-
-
-        <div class="contact-links">
-
-
-            <a
-                href="mailto:cledsonguambe1@gmail.com"
-                class="contact-link">
-
-                <span>
-                    Email
-                </span>
-
-                <strong>
-                    cledsonguambe1@gmail.com
-                </strong>
-
-            </a>
-
-
-
-            <a
-                href="https://github.com/cledsonlg"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link">
-
-                <span>
-                    GitHub
-                </span>
-
-                <strong>
-                    cledsonlg
-                </strong>
-
-            </a>
-
-
-
-            <a
-                href="https://www.linkedin.com/in/cledsonlg"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="contact-link">
-
-                <span>
-                    LinkedIn
-                </span>
-
-                <strong>
-                    Cledson Guambe
-                </strong>
-
-            </a>
-
-
-        </div>
-
-
+      <div class="contact-links">
+        <a href="mailto:cledsonguambe1@gmail.com" class="contact-link">
+          <span>Email</span>
+          <strong>cledsonguambe1@gmail.com</strong>
+        </a>
+        <a href="https://github.com/cledsonlg" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span>GitHub</span>
+          <strong>cledsonlg</strong>
+        </a>
+        <a href="https://www.linkedin.com/in/cledsonlg" target="_blank" rel="noopener noreferrer" class="contact-link">
+          <span>LinkedIn</span>
+          <strong>Cledson Guambe</strong>
+        </a>
+      </div>
     </div>
-
-</section>
-
+  </section>
 
 </main>
 
-
-
-<!-- =====================================================
-     FOOTER
-====================================================== -->
-
 <footer class="site-footer">
-
-
-    <div class="footer-inner">
-
-
-        <div class="footer-name">
-            Cledson Ligio Guambe
-        </div>
-
-
-        <p>
-            Informática · Inovação · Moçambique
-        </p>
-
-
-        <a href="#inicio"
-           class="back-to-top"
-           aria-label="Voltar ao início">
-
-            ↑
-
-        </a>
-
-
-    </div>
-
-
-
-    <div class="footer-bottom">
-
-
-        <p>
-
-            &copy;
-            <span id="currentYear"></span>
-            Cledson Ligio Guambe
-
-        </p>
-
-
-        <p>
-            Desenvolvido por Cledson
-        </p>
-
-
-    </div>
-
-
+  <div class="footer-inner">
+    <div class="footer-name">Cledson Ligio Guambe</div>
+    <p>Informática · Inovação · Moçambique</p>
+    <a href="#inicio" class="back-to-top" aria-label="Voltar ao início">↑</a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear"></span> Cledson Ligio Guambe</p>
+    <p>Desenvolvido por Cledson</p>
+  </div>
 </footer>
 
-
-
-<!-- =====================================================
-     JAVASCRIPT
-====================================================== -->
-
 <script src="script.js"></script>
-
-
 </body>
-
 </html>
-```
